@@ -59,6 +59,11 @@ const Reminder = () => {
             "createdAt": currentTime.toISOString()
         }
 
+        if (name.trim() === "") {
+            toast.error("O campo 'Nome do Lembrete' não pode estar vazio!");
+            return;
+        }
+
         axios.post(url, data)
         .then(() => {
             getData();
@@ -82,7 +87,7 @@ const Reminder = () => {
                 <input type="text" className="form-control" placeholder="Nome do Lembrete" value={name} onChange={(e) => setName(e.target.value)}/>
                 </Col>
                 <Col>
-                <input type ="date" className="form-control" placeholder="Data do Lembrete" value ={date} onChange={(e) => setDate(e.target.value)}/>
+                <input type="text"  className="form-control"  placeholder="Data do Lembrete"  value={date}  onChange={(e) => setDate(e.target.value)}  onFocus={(e) => (e.target.type = "date")} onBlur={(e) => {if (!e.target.value) e.target.type = "text";}}/>
                 </Col>
                 <Col>
                 <button className="btn btn-primary" onClick={()=>handleSave()}>Criar</button>
