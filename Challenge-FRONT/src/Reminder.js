@@ -1,11 +1,13 @@
 import React, {useState, useEffect, Fragment} from "react";
 import axios from "axios";
 
-import { Table } from "react-bootstrap";
+import { Table, Toast } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import {ToastContainer, toast} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Reminder = () => {
 
@@ -16,28 +18,7 @@ const Reminder = () => {
 
     const[name, setName] = useState('')
     const[date, setDate] = useState('')
-    
 
-    const reminderdata = [
-        {
-            id : 1, 
-            name: 'quero comer',
-            date: '2025-01-09T00:00:00',
-            createdAt : '2025-01-09T00:00:00'
-        },
-        {
-            id : 2, 
-            name: 'fazer compras',
-            date: '2025-01-09T00:00:00',
-            createdAt : '2025-01-09T00:00:00'
-        },
-        {
-            id : 3, 
-            name: 'ir a feira',
-            date: '2025-01-09T00:00:00',
-            createdAt : '2025-01-09T00:00:00'
-        }
-    ]
 
     const [data, setData] = useState([]);
 
@@ -58,22 +39,53 @@ const Reminder = () => {
     const handleDelete = (id) => {
         if(window.confirm("Deseja realmente excluir esse lembrete?") == true)
         {
-            alert(id);
+            axios.delete(`http://localhost:5291/api/DReminder/${id}`)
+            .then(() => {
+                    getData();
+                    toast.success('Lembrete excluído');
+            })
+            .catch((error) => {
+                toast.error(error);
+            })
         }
     }
 
+    const handleSave = () => {
+        const currentTime = new Date();
+        const url = 'http://localhost:5291/api/DReminder';
+        const data = {
+            "name": name,
+            "date": date,
+            "createdAt": currentTime.toISOString()
+        }
+
+        axios.post(url, data)
+        .then(() => {
+            getData();
+            clear();
+            toast.success('Lembrete adicionado');
+        })
+    }
+
+    const clear = () => {
+        setName('');
+        setDate('');
+    }
+
+
     return(
         <Fragment>
+            <ToastContainer/>
             <Container>
             <Row>
                 <Col>
                 <input type="text" className="form-control" placeholder="Nome do Lembrete" value={name} onChange={(e) => setName(e.target.value)}/>
                 </Col>
                 <Col>
-                <input type ="text" className="form-control" placeholder="Data do Lembrete" value ={date} onChange={(e) => setDate(e.target.value)}/>
+                <input type ="date" className="form-control" placeholder="Data do Lembrete" value ={date} onChange={(e) => setDate(e.target.value)}/>
                 </Col>
                 <Col>
-                <button className="btn btn-primary">Criar</button>
+                <button className="btn btn-primary" onClick={()=>handleSave()}>Criar</button>
                 </Col>
             </Row>
             </Container>
