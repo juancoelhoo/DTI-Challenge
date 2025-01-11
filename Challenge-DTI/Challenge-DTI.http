@@ -1,0 +1,6 @@
+@Challenge_DTI_HostAddress = http://localhost:5291
+
+GET {{Challenge_DTI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

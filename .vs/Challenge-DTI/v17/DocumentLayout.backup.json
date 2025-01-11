@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B199A6D6-C8C5-4B55-BE9C-2AE620E422F7}|Challenge-DTI\\Challenge-DTI.csproj|c:\\users\\juan\\source\\repos\\challenge-dti\\challenge-dti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B199A6D6-C8C5-4B55-BE9C-2AE620E422F7}|Challenge-DTI\\Challenge-DTI.csproj|solutionrelative:challenge-dti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199A6D6-C8C5-4B55-BE9C-2AE620E422F7}|Challenge-DTI\\Challenge-DTI.csproj|c:\\users\\juan\\source\\repos\\challenge-dti\\challenge-dti\\controllers\\dremindercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B199A6D6-C8C5-4B55-BE9C-2AE620E422F7}|Challenge-DTI\\Challenge-DTI.csproj|solutionrelative:challenge-dti\\controllers\\dremindercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199A6D6-C8C5-4B55-BE9C-2AE620E422F7}|Challenge-DTI\\Challenge-DTI.csproj|c:\\users\\juan\\source\\repos\\challenge-dti\\challenge-dti\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B199A6D6-C8C5-4B55-BE9C-2AE620E422F7}|Challenge-DTI\\Challenge-DTI.csproj|solutionrelative:challenge-dti\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199A6D6-C8C5-4B55-BE9C-2AE620E422F7}|Challenge-DTI\\Challenge-DTI.csproj|c:\\users\\juan\\source\\repos\\challenge-dti\\challenge-dti\\models\\reminderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B199A6D6-C8C5-4B55-BE9C-2AE620E422F7}|Challenge-DTI\\Challenge-DTI.csproj|solutionrelative:challenge-dti\\models\\reminderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199A6D6-C8C5-4B55-BE9C-2AE620E422F7}|Challenge-DTI\\Challenge-DTI.csproj|c:\\users\\juan\\source\\repos\\challenge-dti\\challenge-dti\\migrations\\20250109001313_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B199A6D6-C8C5-4B55-BE9C-2AE620E422F7}|Challenge-DTI\\Challenge-DTI.csproj|solutionrelative:challenge-dti\\migrations\\20250109001313_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\Challenge-DTI\\Program.cs",
+              "RelativeDocumentMoniker": "Challenge-DTI\\Program.cs",
+              "ToolTip": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\Challenge-DTI\\Program.cs*",
+              "RelativeToolTip": "Challenge-DTI\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T00:08:12.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReminderDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\Challenge-DTI\\Models\\ReminderDBContext.cs",
+              "RelativeDocumentMoniker": "Challenge-DTI\\Models\\ReminderDBContext.cs",
+              "ToolTip": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\Challenge-DTI\\Models\\ReminderDBContext.cs",
+              "RelativeToolTip": "Challenge-DTI\\Models\\ReminderDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T23:38:08.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DReminderController.cs",
+              "DocumentMoniker": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\Challenge-DTI\\Controllers\\DReminderController.cs",
+              "RelativeDocumentMoniker": "Challenge-DTI\\Controllers\\DReminderController.cs",
+              "ToolTip": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\Challenge-DTI\\Controllers\\DReminderController.cs",
+              "RelativeToolTip": "Challenge-DTI\\Controllers\\DReminderController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T00:22:22.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250109001313_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\Challenge-DTI\\Migrations\\20250109001313_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Challenge-DTI\\Migrations\\20250109001313_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\Challenge-DTI\\Migrations\\20250109001313_InitialCreate.cs",
+              "RelativeToolTip": "Challenge-DTI\\Migrations\\20250109001313_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T00:13:14.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\Challenge-DTI\\appsettings.json",
+              "RelativeDocumentMoniker": "Challenge-DTI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Juan\\source\\repos\\Challenge-DTI\\Challenge-DTI\\appsettings.json",
+              "RelativeToolTip": "Challenge-DTI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T23:29:41.339Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
