@@ -57,6 +57,15 @@ const Reminder = () => {
             return;
         }
 
+        const selectedDate = new Date(date);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // Set today's time to midnight for accurate comparison
+
+        if (selectedDate <= today) {
+            toast.error("A data selecionada deve ser a partir de amanhã!");
+            return;
+        }
+
         axios.post(url, newData)
             .then(() => {
                 getData();
@@ -93,6 +102,7 @@ const Reminder = () => {
             <Container>
                 <Row className="my-3">
                     <Col>
+                        <h2>Nome do Lembrete</h2>
                         <input
                             type="text"
                             className="form-control"
@@ -102,18 +112,18 @@ const Reminder = () => {
                         />
                     </Col>
                     <Col>
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Data do Lembrete"
-                            value={date}
-                            onChange={(e) => setDate(e.target.value)}
-                            onFocus={(e) => (e.target.type = "date")}
-                            onBlur={(e) => { if (!e.target.value) e.target.type = "text"; }}
+                    <h3>Data</h3>
+                    <input
+                        type="date"
+                        className="form-control"
+                        placeholder="Data do Lembrete"
+                        value={date}
+                        min={new Date(Date.now() + 86400000).toISOString().split("T")[0]} // Tomorrow's date
+                        onChange={(e) => setDate(e.target.value)}
                         />
                     </Col>
                     <Col>
-                        <button className="btn btn-primary" onClick={handleSave}>Criar</button>
+                        <button className="btn btn-primary" style={{width: "100px", marginTop: "40px" }} onClick={handleSave}>Criar</button>
                     </Col>
                 </Row>
             </Container>
