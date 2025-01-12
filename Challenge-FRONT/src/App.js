@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Reminder from './Reminder';
+import Reminder from './components/Reminder';
 
 function App() {
   return (
