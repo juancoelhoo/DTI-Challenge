@@ -1,0 +1,15 @@
+*****Premissas Assumidas*****
+-A aplicação baseia-se no padrão REST para a comunicação com a API, utilizando os métodos HTTP (GET, POST, DELETE) de forma coerente com suas respectivas funções (leitura, criação e exclusão de recursos).
+-Os lembretes possuem, obrigatoriamente, um nome e uma data válida, sendo que o nome não pode estar vazio e a data deve ser posterior à data atual.
+-Os dados retornados pela API seguem um formato consistente que inclui, no mínimo, os campos id, name e date para cada lembrete.
+-O front-end é responsável por validar entradas do usuário, garantindo que informações inválidas não sejam enviadas para a API.
+-A interface foi projetada para organizar lembretes por data, exibindo-os de forma agrupada e ordenada cronologicamente.
+
+*****Decisões de Projeto*****
+-Separação de Responsabilidades: O código foi modularizado em componentes React independentes, como o ReminderForm e o ReminderTable, para facilitar a manutenção, a reutilização e a clareza.
+-Validação de Entradas: A lógica de validação no front-end impede que lembretes com campos inválidos sejam adicionados, fornecendo feedback visual imediato ao usuário através de notificações.
+-Organização por Datas: Os lembretes são agrupados e exibidos no front-end de forma ordenada com base na data, reforçando a usabilidade.
+-Estilo e Usabilidade: A interface utiliza o Bootstrap para elementos responsivos e estilizados.
+-Padrão REST: O design da API REST permite operações básicas sobre lembretes com verbos HTTP apropriados (GET para leitura, POST para criação e DELETE para exclusão).
+-Ordenação Cronológica: No back-end, os lembretes são retornados de forma ordenada pela data, ou isso é gerenciado no front-end após o recebimento dos dados, garantindo a apresentação correta ao usuário.
+-Mensagens de Confirmação e Erro: Notificações claras informam o usuário sobre o sucesso ou falha das ações realizadas, promovendo uma experiência mais interativa e confiável.
